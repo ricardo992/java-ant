@@ -1,15 +1,12 @@
 pipeline{
     agent any
-    tools {
-        ant 'LocalAnt'
-    }
     stages{
         stage("Build"){
             steps{
                 sh'echo **************************'
                 sh'echo *********Building*********'
                 sh'echo **************************'
-                sh'ant -f build.xml'
+                sh'./ant/build.sh'
             }
         }
         stage("Test"){
