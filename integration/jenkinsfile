@@ -6,31 +6,31 @@ pipeline{
     stages{
         stage("Build"){
             steps{
-                sh'echo**************************'
-                sh'echo*********Building*********'
-                sh'echo**************************'
+                sh'echo **************************'
+                sh'echo *********Building*********'
+                sh'echo **************************'
                 sh'ant -f build.xml'
             }
         }
         stage("Test"){
             steps{
-                sh'echo**************************'
-                sh'echo*********Testing*********'
-                sh'echo**************************'
+                sh'echo **************************'
+                sh'echo *********Testing*********'
+                sh'echo **************************'
             }
         }
         stage("PushDesa"){
             steps{
-                sh'echo**************************'
-                sh'echo*********PushDesa*********'
-                sh'echo**************************'
+                sh'echo **************************'
+                sh'echo *********PushDesa*********'
+                sh'echo **************************'
             }
         }
         stage("PushProd"){
             steps{
-                sh'echo**************************'
-                sh'echo*********PushProd*********'
-                sh'echo**************************'
+                sh'echo **************************'
+                sh'echo *********PushProd*********'
+                sh'echo **************************'
             }
         }
     }
