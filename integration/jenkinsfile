@@ -6,7 +6,7 @@ pipeline{
                 sh'echo **************************'
                 sh'echo *********Building*********'
                 sh'echo **************************'
-                sh'ant/build.sh'
+                sh'ls ./ant/build.sh'
             }
         }
         stage("Test"){
