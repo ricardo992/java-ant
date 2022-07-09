@@ -6,7 +6,7 @@ pipeline{
                 sh'echo **************************'
                 sh'echo *********Building*********'
                 sh'echo **************************'
-                sh'ls $PWD/ant/'
+                sh'ls'
             }
         }
         stage("Test"){
