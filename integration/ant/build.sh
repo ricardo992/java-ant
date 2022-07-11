@@ -4,4 +4,6 @@ echo "****************"
 echo "* Building jar!*"
 echo "****************"
 
-echo ls
+$pwd
+
+ls
