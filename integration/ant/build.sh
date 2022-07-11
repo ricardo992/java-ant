@@ -4,4 +4,4 @@ echo "****************"
 echo "* Building jar!*"
 echo "****************"
 
-echo $pwd
+echo "estamos en: "+$pwd
