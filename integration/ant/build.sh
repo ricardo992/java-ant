@@ -4,4 +4,4 @@ echo "****************"
 echo "* Building jar!*"
 echo "****************"
 
-docker ps
+docker run --rm -v $(pwd):/work
