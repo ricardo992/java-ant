@@ -4,4 +4,5 @@ echo "****************"
 echo "* Building jar!*"
 echo "****************"
 
-docker run -f integration/ant/Dockerfile --rm -v $(pwd):/work
+docker build -t ant:1.0 ./integration/ant 
+docker run -f integration/ant --rm -v $(pwd):/work ant:1.0
