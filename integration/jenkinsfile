@@ -6,6 +6,7 @@ pipeline{
                 sh'echo **************************'
                 sh'echo *********Building*********'
                 sh'echo **************************'
+                sh'chmod a+rx ./integration/ant/build.sh'
                 sh'./integration/ant/build.sh'
             }
         }
