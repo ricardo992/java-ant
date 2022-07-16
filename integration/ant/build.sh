@@ -5,7 +5,7 @@ echo "* Building jar!*"
 echo "****************"
 
 echo "estamos en:"
-$pwd
+echo $pwd
 echo "aca hay"
 ls
 docker build -t ant:1.0 ./integration/ant 
