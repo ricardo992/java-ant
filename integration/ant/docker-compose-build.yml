@@ -2,6 +2,6 @@ version: '3'
 services:
   ant:
     container_name: ant_jenkins_con_docker
-    build: ./integration/ant
+    build: .
     volumes:
     - $PWD:/work
