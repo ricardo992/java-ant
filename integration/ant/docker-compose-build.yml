@@ -4,4 +4,4 @@ services:
     container_name: ant_jenkins_con_docker
     build: .
     volumes:
-    - /:/work
+    - .:/work
