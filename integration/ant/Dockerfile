@@ -1,2 +1,7 @@
-FROM frekele/ant:1.10.1-jdk8
+FROM alpine
+
 WORKDIR /work
+
+RUN apk update && apk add openjdk8 && apk add apache-ant
+
+RUN ant
