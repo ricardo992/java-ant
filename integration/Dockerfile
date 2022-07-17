@@ -22,4 +22,4 @@ RUN apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose dock
 # permisos para ReadWriteXecute al directorio (por eso es o+, a los archivos es a+) APARENTEMENTE NO FUNCIONA PTM
 # RUN chmod o+rwx .
 
-# RUN usermod -aG docker jenkins
+RUN usermod -aG docker jenkins
