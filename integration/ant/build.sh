@@ -5,4 +5,4 @@ echo "* Building jar!*"
 echo "****************"
 
 docker build -t ant:2.0 ./integration/ant --no-cache
-docker run --rm -v $PWD:/work ant:2.0 ant
+docker run --rm -v $PWD:/work ant:2.0 ls
