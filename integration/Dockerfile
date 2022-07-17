@@ -16,7 +16,7 @@ RUN echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
   $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null 
 RUN apt-get update 
-RUN apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+RUN apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose docker-compose-plugin
 
 # RUN chmod 777 .
 # permisos para ReadWriteXecute al directorio (por eso es o+, a los archivos es a+) APARENTEMENTE NO FUNCIONA PTM
