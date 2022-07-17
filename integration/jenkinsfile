@@ -1,10 +1,5 @@
 pipeline{
     agent any
-
-    tools {
-        ant 'LocalAnt' 
-    }
-
     stages{
         stage("Build"){
             steps{
@@ -12,7 +7,7 @@ pipeline{
                 sh'echo *********Building*********'
                 sh'echo **************************'
                 sh'chmod a+rx ./integration/ant/build.sh'
-                sh'ant'
+                sh'./integration/ant/build.sh'
             }
         }
         // stage("Test"){
