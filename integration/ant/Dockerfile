@@ -4,4 +4,4 @@ WORKDIR /worka
 
 RUN apk update && apk add openjdk8 && apk add apache-ant
 
-CMD [ "ls" "-la" ]
+CMD [ "ant" ]
