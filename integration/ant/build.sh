@@ -4,7 +4,7 @@ echo "****************"
 echo "* Building jar!*"
 echo "****************"
 
-$PROJ=$PWD
+PROJ=$PWD
 echo "project:"
 $PROJ
 
