@@ -6,8 +6,8 @@ pipeline{
                 sh'echo ***************************'
                 sh'echo **********Set var**********'
                 sh'echo ***************************'
-                sh'chmod a+rx ./integration/env'
-                sh'./integration/env'
+                sh'chmod a+rx ./integration/env.sh'
+                sh'./integration/env.sh'
             }
         }
         stage("Build"){
@@ -15,9 +15,7 @@ pipeline{
                 sh'echo **************************'
                 sh'echo *********Building*********'
                 sh'echo **************************'
-                sh'chmod a+rx ./integration/env'
                 sh'chmod a+rx ./integration/ant/build.sh'
-                sh'./integration/env'
                 sh'./integration/ant/build.sh'
             }
         }
