@@ -1,6 +1,15 @@
 pipeline{
     agent any
     stages{
+        stage("variables de entorno"){
+            steps{
+                sh'echo ***************************'
+                sh'echo **********Set var**********'
+                sh'echo ***************************'
+                sh'chmod a+rx ./integration/env'
+                sh'./integration/env'
+            }
+        }
         stage("Build"){
             steps{
                 sh'echo **************************'
