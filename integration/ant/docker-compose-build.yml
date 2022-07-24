@@ -1,7 +1,0 @@
-version: '3'
-services:
-  ant:
-    container_name: ant_jenkins_con_docker
-    build: .
-    volumes:
-    - /home/ricardo/proyectos/aplicacionesWeb/prueba-jenkins-docker-in-docker/integration/jenkins_home/workspace/java-ant:/worka
